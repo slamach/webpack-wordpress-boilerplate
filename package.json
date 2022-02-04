@@ -1,0 +1,43 @@
+{
+  "name": "project-name",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "build": "webpack --node-env=production",
+    "start": "webpack watch --node-env=development"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,scss}": "prettier --write"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.6.0",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "husky": "^7.0.0",
+    "image-minimizer-webpack-plugin": "^3.2.3",
+    "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.1",
+    "lint-staged": "^12.3.1",
+    "mini-css-extract-plugin": "^2.5.3",
+    "postcss-loader": "^6.2.1",
+    "prettier": "2.5.1",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-manifest-plugin": "^4.1.1",
+    "webpackbar": "^5.0.2"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ]
+}

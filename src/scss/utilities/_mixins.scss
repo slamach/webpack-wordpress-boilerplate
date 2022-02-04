@@ -1,0 +1,35 @@
+@mixin large-only {
+  @media screen and (min-width: #{$bp-large}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (max-width: #{$bp-large - 1}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$bp-medium - 1}) {
+    @content;
+  }
+}
+
+@mixin hover() {
+  &:hover {
+    @include large-only {
+      @content;
+    }
+  }
+}
+
+@mixin font($fname, $furl, $fweight, $fstyle) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-display: swap;
+    src: url($furl) format('woff2');
+  }
+}

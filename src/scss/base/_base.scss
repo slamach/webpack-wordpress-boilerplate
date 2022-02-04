@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: $bp-small;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
