@@ -13,7 +13,6 @@ const isDev = process.env.NODE_ENV === 'development';
 const config = {
   entry: ['./js/index.js', './scss/style.scss'],
   dirsToCopy: ['img', 'fonts'],
-  outputDir: 'build',
   browserSyncProxy: 'http://example.local',
 };
 
@@ -28,7 +27,7 @@ module.exports = {
   entry: config.entry,
   output: {
     filename: isDev ? 'js/bundle.js' : 'js/bundle.[contenthash:8].js',
-    path: path.resolve(__dirname, config.outputDir),
+    path: path.resolve(__dirname, 'build'),
     clean: true,
   },
   module: {
@@ -85,7 +84,7 @@ module.exports = {
     }),
     new WebpackManifestPlugin({
       fileName: 'webpack.manifest.json',
-      publicPath: '/' + config.outputDir,
+      publicPath: '/build',
       filter: (file) => /\.(js|css)$/.test(file.name),
     }),
     new BrowserSyncPlugin({

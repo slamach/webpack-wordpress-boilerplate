@@ -29,7 +29,7 @@ add_action('after_setup_theme', 'theme_setup');
 
 function theme_add_styles_and_scripts() {
   $manifest = json_decode(
-    file_get_contents(get_template_directory_uri() . "/build/webpack.manifest.json"),
+    file_get_contents(__DIR__ . "/build/webpack.manifest.json"),
     true
   );
 
