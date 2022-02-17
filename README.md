@@ -7,6 +7,7 @@ Boilerplate for building WordPress themes using modern technology.
 There is a branch without Docker - [no-docker](https://github.com/slamach/webpack-wordpress-boilerplate/tree/no-docker).
 
 ### Features
+
 - **Modern technology:** ES6+ (Babel), Sass
 - **Webpack:** Project bundling with Webpack
 - **Browsersync:** Local server with HMR
@@ -15,8 +16,10 @@ There is a branch without Docker - [no-docker](https://github.com/slamach/webpac
 - **EditorConfig и Prettier:** Code formatting on commit
 
 ### Project Structure
+
 All theme files are in the root directory.
 All development takes place in the `src` directory.
+
 - `fonts`
 - `img`
 - `js`
@@ -33,6 +36,7 @@ Boilerplate for building WordPress themes using modern technology.
 There is a branch without Docker - [no-docker](https://github.com/slamach/webpack-wordpress-boilerplate/tree/no-docker).
 
 ### Features
+
 - **Modern technology:** ES6+ (Babel), Sass
 - **Docker:** All you need inside a Docker container
 - **Webpack:** Project bundling with Webpack
@@ -41,16 +45,19 @@ There is a branch without Docker - [no-docker](https://github.com/slamach/webpac
 - **EditorConfig и Prettier:** Code formatting on commit
 
 ### Project Structure
+
 Theme files are in the `public` directory.  
 All development takes place in the `src` directory.
+
 - `fonts`
 - `img`
-- `js` 
+- `js`
 - `scss`
 
 Build configuration is in the `config` object in the file `webpack.config.js`.
 
 ## Installation and Usage
+
 ```
 npm install
 ```
@@ -60,6 +67,7 @@ To make the pre-commit hook work, you need to run `npm install` when the project
 If the project is initialized as a repository later, you need to additionally execute `npm run prepare`.
 
 ### Development
+
 ```
 npm run docker:start
 npm start
@@ -68,12 +76,13 @@ npm run docker:stop
 ```
 
 ### Production
+
 ```
 npm build
 ```
 
 ## Contact
+
 Dmitry Sviridov  
 Telegram: [slamach](https://t.me/slamach)  
 Email: sviridov.dvv@gmail.com
-

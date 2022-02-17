@@ -13,7 +13,7 @@ const isDev = process.env.NODE_ENV === 'development';
 const config = {
   entry: ['./js/index.js', './scss/style.scss'],
   dirsToCopy: ['img', 'fonts'],
-  browserSyncProxy: 'http://example.local',
+  containerUrl: 'http://localhost:8000',
 };
 
 const generateCopyPatterns = () =>
@@ -27,7 +27,7 @@ module.exports = {
   entry: config.entry,
   output: {
     filename: isDev ? 'js/bundle.js' : 'js/bundle.[contenthash:8].js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'public/build'),
     clean: true,
   },
   module: {
@@ -90,8 +90,8 @@ module.exports = {
     new BrowserSyncPlugin({
       ui: false,
       notify: false,
-      proxy: config.browserSyncProxy,
-      files: ['**/*.php'],
+      proxy: config.containerUrl,
+      files: ['public/**/*.php'],
     }),
     ...(!isDev ? [new WebpackBar()] : []),
   ],
