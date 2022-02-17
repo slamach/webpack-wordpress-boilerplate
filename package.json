@@ -3,6 +3,8 @@
   "private": true,
   "scripts": {
     "prepare": "husky install",
+    "docker:start": "docker-compose -p $npm_package_name up -d",
+    "docker:stop": "docker-compose -p $npm_package_name down",
     "build": "webpack --node-env=production",
     "start": "webpack watch --node-env=development"
   },
