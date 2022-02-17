@@ -4,6 +4,8 @@
 
 Шаблон для разработки тем для WordPress с использованием современных технологий.
 
+Параллельно существует ветка без Docker - [no-docker](https://github.com/slamach/webpack-wordpress-boilerplate/tree/no-docker).
+
 ### Особенности проекта
 - **Современные технологии:** ES6+ (Babel), Sass
 - **Docker:** Все необходимое окружение внутри контейнера
