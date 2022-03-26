@@ -1,0 +1,41 @@
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./scss/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 360px;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=style.css.map*/

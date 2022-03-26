@@ -1,39 +1,70 @@
 # Webpack WordPress Theme Boilerplate
 
-## О проекте
+## About the Project
 
-Шаблон для разработки тем для WordPress с использованием современных технологий.
+Boilerplate for building WordPress themes using modern technology.
 
-### Особенности проекта
-- **Современные технологии:** ES6+ (Babel), Sass
-- **Webpack:** Сборка проекта с помощью Webpack
-- **Browsersync:** Локальный сервер с синхронизацией между устройствами
-- **Imagemin:** Сжатие изображений с помощью Imagemin
-- **Manifest:** Генерация хэшей в имени файлов для предотвращения кэширования старых ресурсов
-- **EditorConfig и Prettier:** Автоматическое форматирование исходных файлов при коммите
+There is a branch without Docker - [no-docker](https://github.com/slamach/webpack-wordpress-boilerplate/tree/no-docker).
 
-### Структура проекта
-Все PHP-файлы темы лежат в корне проекта.  
-Основная разработка происходит в директории `src`.
-- `fonts` -- шрифты
-- `img` -- медиафайлы
-- `js` -- JS-скрипты
-- `scss` -- SCSS-стили
+### Features
+- **Modern technology:** ES6+ (Babel), Sass
+- **Webpack:** Project bundling with Webpack
+- **Browsersync:** Local server with HMR
+- **Imagemin:** Image minifying with Imagemin
+- **Manifest:** Hashes in file names to prevent caching of old resources
+- **EditorConfig и Prettier:** Code formatting on commit
 
-Основные параметры сборки вынесены в объект `config` в файле `webpack.config.js`.
+### Project Structure
+All theme files are in the root directory.
+All development takes place in the `src` directory.
+- `fonts`
+- `img`
+- `js`
+- `scss`
 
-## Сборка и запуск
+Build configuration is in the `config` object in the file `webpack.config.js`.
+
+# Webpack WordPress Theme Boilerplate
+
+## About the Project
+
+Boilerplate for building WordPress themes using modern technology.
+
+There is a branch without Docker - [no-docker](https://github.com/slamach/webpack-wordpress-boilerplate/tree/no-docker).
+
+### Features
+- **Modern technology:** ES6+ (Babel), Sass
+- **Docker:** All you need inside a Docker container
+- **Webpack:** Project bundling with Webpack
+- **Imagemin:** Image minifying with Imagemin
+- **Manifest:** Hashes in file names to prevent caching of old resources
+- **EditorConfig и Prettier:** Code formatting on commit
+
+### Project Structure
+Theme files are in the `public` directory.  
+All development takes place in the `src` directory.
+- `fonts`
+- `img`
+- `js` 
+- `scss`
+
+Build configuration is in the `config` object in the file `webpack.config.js`.
+
+## Installation and Usage
 ```
 npm install
 ```
 
-Чтобы заработал pre-commit хук, нужно выполнять `npm install`, когда проект уже инициализирован как Git-репозиторий.
+To make the pre-commit hook work, you need to run `npm install` when the project is already initialized as a Git repository.
 
-Если проект инициализируется как репозиторий позже, нужно дополнительно выполнить `npm run prepare`.
+If the project is initialized as a repository later, you need to additionally execute `npm run prepare`.
 
 ### Development
 ```
+npm run docker:start
 npm start
+
+npm run docker:stop
 ```
 
 ### Production
@@ -41,7 +72,8 @@ npm start
 npm build
 ```
 
-## Контакты
-Дмитрий Свиридов  
+## Contact
+Dmitry Sviridov  
 Telegram: [slamach](https://t.me/slamach)  
 Email: sviridov.dvv@gmail.com
+
