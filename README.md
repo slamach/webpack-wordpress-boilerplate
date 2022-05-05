@@ -43,7 +43,7 @@ npm run docker:stop
 
 ### Production
 ```
-npm build
+npm run build
 ```
 
 ## Contact
