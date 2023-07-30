@@ -3,6 +3,10 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
+    ignore:
+      - dependency-name: '*'
+        update-types:
+          ['version-update:semver-minor', 'version-update:semver-patch']
     open-pull-requests-limit: 10
     versioning-strategy: increase
