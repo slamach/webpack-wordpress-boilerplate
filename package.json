@@ -32,7 +32,7 @@
     "postcss-loader": "^7.3.3",
     "prettier": "3.0.0",
     "sass": "^1.64.1",
-    "sass-loader": "^13.3.2",
+    "sass-loader": "^14.2.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-manifest-plugin": "^5.0.0",
