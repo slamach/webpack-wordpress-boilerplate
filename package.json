@@ -36,7 +36,7 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-manifest-plugin": "^5.0.0",
-    "webpackbar": "^5.0.2"
+    "webpackbar": "^6.0.1"
   },
   "browserslist": [
     "defaults",
